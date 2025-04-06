@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <script>
+            if (location.hostname === 'www.noamguterman.com') {
+                location.href = location.protocol + '//' + 'noamguterman.com' + location.pathname + location.search;
+            }
+
             // Check localStorage or system preference for theme
             const userPref = localStorage.getItem("theme");
             const systemPref = window.matchMedia("(prefers-color-scheme: dark)").matches;
