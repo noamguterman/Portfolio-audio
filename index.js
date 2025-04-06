@@ -128,7 +128,6 @@ function handleNavScroll() {
 function updateDates() {
     const ageElement = document.getElementById('age')
     const yearsInTechElement = document.getElementById('years-in-tech')
-    const monthsDiffElement = document.getElementById('months-diff')
     const currentYearElement = document.getElementById('current-year')
 
     const birthDate = new Date('1991-03-09')
@@ -141,7 +140,6 @@ function updateDates() {
 
     ageElement.textContent = age
     yearsInTechElement.textContent = yearsInTech
-    monthsDiffElement.textContent = monthsDiff
     currentYearElement.textContent = currentYear
 }
 
